@@ -37,9 +37,6 @@ fn input_function() -> String { // gets input command from user
 }
 fn command_executer() { // executes command written
     let command = input_function();
-    if command.trim() == "arden" {
-        arden()
-    }
     if command.trim() == "quit"{
         quit()
     }
@@ -108,25 +105,6 @@ fn moo() {
 }
 fn dairy_king() {
     println!("you have summoned the dairy king");
-    command_executer()
-}
-fn arden() { // arden command
-    let arr = ["arden", "is", "a", "cutie"];
-    let mut num = 0;
-    let mut count = 0;
-    println!();
-    loop {
-        if count == 5{
-            break;
-        }
-        if num == 4 {
-            num = 0;
-            count += 1;
-            println!();
-        }
-        println!("{}", arr[num]);
-        num += 1;
-    }
     command_executer()
 }
 
